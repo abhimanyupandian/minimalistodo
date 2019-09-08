@@ -1,2 +1,4 @@
 # minimalistodo
-A minimalist to-do application for everyone!
+A minimalist to-do web application for everyone inspired from cassidoo/todometer and xtrp/blaze!
+
+
