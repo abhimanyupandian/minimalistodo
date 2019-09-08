@@ -113,6 +113,11 @@ div.row div.progress_bar div.progress {
   background-color: var(--green-color);
   transition: width 0.5s;
 }
+
+.add_default_items {
+  position: center;
+}
+
 div.row.add_todo_item {
   margin-top: 1rem;
   position: relative;
@@ -122,7 +127,7 @@ div.row.add_todo_item input::placeholder {
   color: #8b8e94;
 }
 div.row.add_todo_item input {
-  width: calc(100% - 2.5rem);
+  width: calc(100% - 5rem);
   line-height: 2;
   padding: 0.5rem 0.75rem;
   background-color: transparent;
@@ -134,22 +139,24 @@ div.row.add_todo_item input {
   font-size: 0.8rem;
   color: #FBFAFB;
 }
-div.row.add_todo_item button, div.row.todo_item button {
+div.row.add_todo_item button {
   width: 1rem;
   height: 1rem;
   float: left;
   display: block;
   background-color: transparent;
-  fill: #FBFAFB;
   cursor: pointer;
+  color: rgb(155, 145, 155);
   display: inline-block;
   margin: 0.75rem;
   font-size: 0;
-  
 }
-div.row.add_todo_item button:hover, div.row.todo_item button:hover {
-  fill:  rgb(0, 153, 255);
+
+div.row.add_todo_item button:hover {
+  fill: var(--green-color);
 }
+
+
 div.row.add_todo_item button svg, div.row.todo_item button svg {
   height: 1rem;
   width: 1rem;
@@ -172,15 +179,16 @@ div.row.todo_item {
 
 div.row.todo_item p {
   width: calc(100% - 5.625rem);
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.75rem;
   padding-right: 0;
-  line-height: 1.5rem;
+  line-height: 2rem;
   color: #FBFAFB;
   font-size: 1.125rem;
   display: block;
   float: left;
   box-sizing: border-box;
 }
+
 @media (max-width: 600px) {
   div.row.todo_item {
     text-align: center;
